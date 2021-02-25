@@ -55,6 +55,7 @@ public class Steps {
     @When("User click on Log out link")
     public void user_click_on_log_out_link() {
         lp.clickLogout();
+        System.out.println("Logout succesful");
     }
 
     @Then("close browser")
