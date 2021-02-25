@@ -32,11 +32,13 @@ public class Steps {
     public void user_enters_email_as_and_password_as(String email, String password) {
         lp.setUserName(email);
         lp.setPassword(password);
+        System.out.println("Email Password");
     }
 
     @When("Click on Login")
     public void click_on_login() {
         lp.clickLogin();
+        System.out.println("Login succesful");
     }
 
     @Then("Page Title should be {string}")
